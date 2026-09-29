@@ -1,6 +1,20 @@
 {
   "target": "http://127.0.0.1:8080/v1/chat/completions",
-  "attempts": [{"attempt": 1, "http_status": 200, "latency_ms": 4.71, "error": null}],
+  "config": {
+    "endpoint": "http://127.0.0.1:8080/v1/chat/completions",
+    "timeout_seconds": 2.0,
+    "retries": 1,
+    "max_latency_ms": 1000.0
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "http_status": 200,
+      "latency_ms": 36.95,
+      "outcome": "success",
+      "error": null
+    }
+  ],
   "checks": {
     "reachable": true,
     "http_ok": true,
@@ -10,6 +24,6 @@
     "non_empty_response": true
   },
   "schema_errors": [],
+  "failure_type": null,
   "passed": true
 }
-

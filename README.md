@@ -6,9 +6,10 @@ This is a personal portfolio project. It does not represent employer or client w
 
 ## What it demonstrates
 
-- Positive, negative, malformed, empty, timeout, and transient-error cases
+- Positive, HTTP 4xx/5xx, malformed, empty, timeout, and transport-error cases
 - A minimal schema check for `choices[0].message.content`
 - Per-attempt status, error, and latency evidence
+- Explicit `success`, `http_response_error`, `timeout`, `transport_failure`, `malformed_json`, and `invalid_schema` outcomes
 - Configurable timeout, retry count, and latency budget
 - JSON reports that are safe to attach to a bug or test run
 - Automated tests using deterministic fakes instead of paid APIs
@@ -45,6 +46,8 @@ The command exits with code `0` only when all checks pass. A representative resu
 | Chat schema | A non-empty assistant content string exists |
 | Latency | Final attempt stays inside the configured budget |
 | Empty response | Parsed payload is not empty |
+
+The top-level `failure_type` identifies the final failure category. HTTP error responses preserve their real status code; retryable `429` and `5xx` responses may be retried within the configured bound, while other `4xx` responses stop immediately.
 
 ## Project structure
 
