@@ -1,0 +1,15 @@
+{
+  "target": "http://127.0.0.1:8080/v1/chat/completions",
+  "attempts": [{"attempt": 1, "http_status": 200, "latency_ms": 4.71, "error": null}],
+  "checks": {
+    "reachable": true,
+    "http_ok": true,
+    "valid_json": true,
+    "valid_chat_schema": true,
+    "within_latency_budget": true,
+    "non_empty_response": true
+  },
+  "schema_errors": [],
+  "passed": true
+}
+
