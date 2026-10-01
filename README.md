@@ -16,8 +16,11 @@ This is a personal portfolio project. It does not represent employer or client w
 
 ## Quick start
 
+Create and activate the virtual environment before installing dependencies. On Windows PowerShell, use `.\.venv\Scripts\Activate.ps1` instead of `source .venv/bin/activate`.
+
 ```bash
 python -m venv .venv
+source .venv/bin/activate
 python -m pip install -e ".[dev]"
 pytest -q
 ```
