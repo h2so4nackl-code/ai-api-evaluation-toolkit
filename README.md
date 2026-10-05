@@ -1,5 +1,7 @@
 # AI API Evaluation Toolkit
 
+[![Tests](https://github.com/h2so4nackl-code/ai-api-evaluation-toolkit/actions/workflows/tests.yml/badge.svg)](https://github.com/h2so4nackl-code/ai-api-evaluation-toolkit/actions/workflows/tests.yml)
+
 A small, local-first Python toolkit for checking OpenAI-compatible chat endpoints. It demonstrates endpoint health, HTTP and JSON validation, response-shape checks, latency measurement, timeout handling, retry behavior, and machine-readable evaluation reports.
 
 This is a personal portfolio project. It does not represent employer or client work, and it contains no API keys, production credentials, or private evaluation data.
