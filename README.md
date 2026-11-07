@@ -70,14 +70,6 @@ reports/               sanitized sample output
 - The schema check is intentionally small and educational, not a full OpenAPI validator.
 - Response text is not copied into reports, reducing accidental data exposure.
 
-## Suggested GitHub description
-
-Local-first Python toolkit for OpenAI-compatible endpoint health, schema, latency, timeout, retry, and reporting checks.
-
-## Suggested topics
-
-`ai-evaluation`, `api-testing`, `quality-assurance`, `python`, `json`, `http`, `llm-testing`, `test-automation`
-
 ## License
 
 MIT
